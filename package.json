@@ -1,0 +1,22 @@
+{
+  "name": "projeto-web-2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material/web": "^1.5.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

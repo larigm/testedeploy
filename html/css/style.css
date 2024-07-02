@@ -1,0 +1,87 @@
+.alata-regular {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.membro img{
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+}  
+.carousel{
+  width: 100%;
+
+}
+.cards{
+  animation: FadeIn 0.5s;
+}
+.logo{
+  width: 20vh;
+}
+.navbar{
+  height: 7vh;
+}
+.nav-item{
+  margin: 2vh;
+  color: brown;
+}
+
+.text-center{
+  color: #432217;
+  margin: 0;
+  padding-top: 4px;
+  font-size: 40px;
+}
+.h1{
+  text-align: center;
+  padding: 100px;
+ display: flex;
+ justify-content: center;
+ font-size: 50px;
+}
+iframe{
+  margin: 20px;
+  align-items: center;
+ 
+  display: flex;
+  justify-content: center;
+}
+.nav-item  a :hover{
+  color: rgb(250, 245, 255);
+}
+.membro:hover {
+  transform: scale(0.9);
+}
+.img-caramel{
+  transition: 50ms linear;
+}
+.img-caramel:hover{
+  transform: scale(0.9);
+}
+.img-pacoca{
+  transition: 50ms linear;
+}
+.img-pacoca:hover{
+  transform: scale(0.9);
+}
+.img-cream{
+  transition: 50ms linear;
+}
+.img-cream:hover{
+  transform: scale(0.9);
+}
+.membro{
+  animation: FadeIn 1s;
+  transition: 50ms linear;
+}
+@keyframes FadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
