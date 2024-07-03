@@ -1,3 +1,12 @@
 {
-    "contacts": []
+  "contacts": [
+    {
+      "id": "a778",
+      "name": "JOSIELE APARECIDA GOMES",
+      "email": "11098436903",
+      "phone": "(11) 1111-1111",
+      "cep": "85055-300",
+      "genero": "feminino"
+    }
+  ]
 }

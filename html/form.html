@@ -73,6 +73,7 @@
                         class="form-control"
                         id="nome"
                         placeholder="Digite seu nome"
+                        pattern="[A-Z][a-z]+[[ ][A-Z][a-z]+]*"
                     />
                     <div class="invalid-feedback">Informe seu nome</div>
                 </div>
@@ -115,8 +116,9 @@
                             type="text"
                             id="cep"
                             value=""
-                            size="10"
-                            maxlength="9"
+                            size="60"
+                            placeholder="Digite seu cep"
+
                         />
                         <div class="invalid-feedback">
                             Informe um cep.
@@ -161,7 +163,7 @@
                 </div>
                 <!-- Gênero -->
                 <div class="mb-3">
-                    <label class="form-label">Gênero</label>
+                    <label class="form-label">Você se identifica?</label>
                     <div>
                         <div class="form-check form-check-inline">
                             <input

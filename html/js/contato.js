@@ -1,4 +1,4 @@
-
+// pegar dados do form
 document.getElementById("cadastroForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -20,7 +20,7 @@ document.getElementById("cadastroForm").addEventListener("submit", function (eve
 
     alert("Cadastro feito com sucesso!");
   });
-
+// enviando dado e transformando em json
 fetch("http://localhost:3000/formData", {
   method: "POST",
   headers: {
@@ -28,21 +28,3 @@ fetch("http://localhost:3000/formData", {
   },
   body: JSON.stringify(dadosFormulario),
 });
-const p1 = {
-  nome: document.getElementById("nome").value,
-}
-  .then((response) => response.json())
-  .then((data) => {});
-
-var xhr = new XMLHttpRequest();
-xhr.open("POST", "http://localhost:3000/formData", true);
-xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-xhr.onreadystatechange = function () {
-  if (xhr.readyState === 4 && xhr.status === 201) {
-    console.log(JSON.parse(xhr.responseText));
-  } else if (xhr.readyState === 4) {
-    console.error("Erro ao enviar dados:", xhr.responseText);
-  }
-};
-xhr.send(JSON.stringify(dadosFormulario));
-

@@ -27,6 +27,7 @@
     display: flex;
     justify-content: center;
   }
+  /* ID 05 */
   .nav-item  a :hover{
     color: rgb(250, 245, 255);
   }
