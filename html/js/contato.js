@@ -1,11 +1,5 @@
-// index.js
-import '@material/web/button/filled-button.js';
-import '@material/web/button/outlined-button.js';
-import '@material/web/checkbox/checkbox.js';
 
-document
-  .getElementById("cadastroForm")
-  .addEventListener("submit", function (event) {
+document.getElementById("cadastroForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
     var nome = document.getElementById("nome").value;
@@ -27,7 +21,7 @@ document
     alert("Cadastro feito com sucesso!");
   });
 
-fetch("http://localhost:3005/formData", {
+fetch("http://localhost:3000/formData", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -45,11 +39,10 @@ xhr.open("POST", "http://localhost:3000/formData", true);
 xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 xhr.onreadystatechange = function () {
   if (xhr.readyState === 4 && xhr.status === 201) {
-    // Opcional: mostrar uma mensagem de sucesso
-    alert("Dados enviados com sucesso.!");
     console.log(JSON.parse(xhr.responseText));
   } else if (xhr.readyState === 4) {
     console.error("Erro ao enviar dados:", xhr.responseText);
   }
 };
 xhr.send(JSON.stringify(dadosFormulario));
+

@@ -1,6 +1,3 @@
-$(document).ready(function () {
-  $("#cadastroForm").on("submit", function (event) {
-    event.preventDefault();
 
     const data = {
       name: $("#nome").val(),
@@ -10,7 +7,7 @@ $(document).ready(function () {
     };
 
     $.ajax({
-      url: "http://localhost:3005/contacts",
+      url: "http://localhost:3000/contacts",
       method: "POST",
       contentType: "application/json",
       data: JSON.stringify(data),
@@ -18,9 +15,7 @@ $(document).ready(function () {
         console.log("Success:", response);
       },
       error: function (error) {
-        alert("Erro.");
+        alert("Erro ao enviar formulário");
         console.error("Error:", error);
       },
-    });
-  });
-});
+    });;;

@@ -1,0 +1,17 @@
+.carousel{
+    width: 100%;
+
+  }
+  .cards{
+    animation: FadeIn 0.5s;
+  }
+  .logo{
+    width: 20vh;
+  }
+  .navbar{
+    height: 7vh;
+  }
+  .nav-item{
+    margin: 2vh;
+    color: brown;
+  }

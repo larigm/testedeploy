@@ -1,0 +1,23 @@
+.logo {
+    width: 20vh;
+  }
+  .img {
+    height: 100vh;
+    border-radius: 5%;
+    padding: 20px;
+  }
+
+  .cadastro {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #126f38;
+  }
+.text{
+    padding: 2vh;
+}
+h4{
+    background-color: #126f395e;
+    border: #4322176c 1px solid;
+    color: white;
+}
